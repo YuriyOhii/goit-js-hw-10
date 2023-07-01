@@ -1,5 +1,6 @@
 export default {
-    select: document.querySelector('.js-breed-select'),
-    loader: document.querySelector('.js-loader-text'),
-    errorMessage: document.querySelector('.js-text-error'),
-}
+  select: document.querySelector('.js-breed-select'),
+  loader: document.querySelector('.js-loader-text'),
+  errorMessage: document.querySelector('.js-text-error'),
+  cardContainer: document.querySelector('.js-cat-info'),
+};
