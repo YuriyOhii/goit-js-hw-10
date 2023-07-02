@@ -1,3 +1,4 @@
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import refs from './refs.js';
 
 function fillInBreeds(data) {
@@ -15,13 +16,21 @@ function renderCatCard(data) {
   <p class="cat-temperament"><b>Temperament: </b>${cat.temperament}</p></div>`;
 
   refs.cardContainer.innerHTML = catCardMarkup;
-};
+}
 
 function showErrorMessage(er) {
   refs.select.classList.add('is-hidden');
   refs.loader.classList.add('is-hidden');
-  refs.errorMessage.insertAdjacentHTML('beforeend',` ${er}`);
+  refs.errorMessage.insertAdjacentHTML('beforeend', ` ${er}`);
   refs.errorMessage.classList.remove('is-hidden');
+   Notify.failure(
+     `Oops! Something went wrong! Try reloading the page!   ${er}`,
+     {
+       timeout: 5000,
+       width: '600px',
+       position: 'left-top',
+     }
+   );
 }
 
 export { fillInBreeds, renderCatCard, showErrorMessage };

@@ -1,3 +1,4 @@
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import '../css/common.css';
 import refs from './refs.js';
 import { Cat_API } from './cat-api.js';
