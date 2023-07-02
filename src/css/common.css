@@ -1,3 +1,36 @@
+body {
+  padding: 20px;
+  font-family: sans-serif;
+  color:#2a2a2a;
+  background-color: #fff;
+}
+.breed-select {
+  margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.loader, .error {
+    color: red;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+.cat-info {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    flex-basis: 50%;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.item {
+    flex-basis: calc((100% - 60px) / 2);
+}
 .is-hidden {
-    display: none;
+  display: none;
 }
